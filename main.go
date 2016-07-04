@@ -6,6 +6,7 @@ import (
 )
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Received call in hellohandler")
 	fmt.Fprintln(w, "Hello World from Go in minimal Docker container")
 }
 
